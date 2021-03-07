@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>lsh blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="慎终如始">
+    
+    <link rel="preload" href="/assets/css/0.styles.07f20ce4.css" as="style"><link rel="preload" href="/assets/js/app.4d894ed6.js" as="script"><link rel="preload" href="/assets/js/2.f9f18fc0.js" as="script"><link rel="preload" href="/assets/js/20.c30477de.js" as="script"><link rel="prefetch" href="/assets/js/10.da08d006.js"><link rel="prefetch" href="/assets/js/11.8e4e094d.js"><link rel="prefetch" href="/assets/js/12.6ef280bc.js"><link rel="prefetch" href="/assets/js/13.1f7a5ef7.js"><link rel="prefetch" href="/assets/js/14.b4914078.js"><link rel="prefetch" href="/assets/js/15.b05ccf8f.js"><link rel="prefetch" href="/assets/js/16.407edd68.js"><link rel="prefetch" href="/assets/js/17.437cab14.js"><link rel="prefetch" href="/assets/js/18.760c0c3b.js"><link rel="prefetch" href="/assets/js/19.eceac504.js"><link rel="prefetch" href="/assets/js/21.e126fd59.js"><link rel="prefetch" href="/assets/js/22.fcc1fd8c.js"><link rel="prefetch" href="/assets/js/23.221bb3b1.js"><link rel="prefetch" href="/assets/js/24.6162f07e.js"><link rel="prefetch" href="/assets/js/25.3bc657c1.js"><link rel="prefetch" href="/assets/js/26.bd854a41.js"><link rel="prefetch" href="/assets/js/27.c15815b6.js"><link rel="prefetch" href="/assets/js/28.dbc9c9cc.js"><link rel="prefetch" href="/assets/js/29.1035cbf9.js"><link rel="prefetch" href="/assets/js/3.0876dec8.js"><link rel="prefetch" href="/assets/js/30.a35f0371.js"><link rel="prefetch" href="/assets/js/4.ea4978a2.js"><link rel="prefetch" href="/assets/js/5.cd535d35.js"><link rel="prefetch" href="/assets/js/6.aeb72df2.js"><link rel="prefetch" href="/assets/js/7.90fb5285.js"><link rel="prefetch" href="/assets/js/8.088aaad3.js"><link rel="prefetch" href="/assets/js/9.090c9fb2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.07f20ce4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">lsh blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>React</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/React/ref.html" class="sidebar-link">ref</a></li><li><a href="/React/context.html" class="sidebar-link">context</a></li><li><a href="/React/memo &amp; useMemo &amp; useCallback.html" class="sidebar-link">memo &amp; useMemo &amp; useCallback</a></li><li><a href="/React/useState.html" aria-current="page" class="active sidebar-link">useState</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/React/useState.html#使用" class="sidebar-link">使用</a></li></ul></li><li><a href="/React/useEffect.html" class="sidebar-link">useEffect</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>React 相关库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ES6</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网络协议</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>const [state, setState] = useState(initialState)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>与 class 组件中的 setState 方法不同，useState 不会自动合并更新对象。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>count<span class="token punctuation">,</span> setCount<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">onClick</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setCount</span><span class="token punctuation">(</span><span class="token parameter">prevCount</span> <span class="token operator">=&gt;</span> prevCount <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token function">setCount</span><span class="token punctuation">(</span><span class="token parameter">prevCount</span> <span class="token operator">=&gt;</span> prevCount <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token function">setCount</span><span class="token punctuation">(</span><span class="token parameter">prevCount</span> <span class="token operator">=&gt;</span> prevCount <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span><span class="token operator">&gt;</span>
+      Count<span class="token operator">:</span> <span class="token punctuation">{</span>count<span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span>onClick<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token operator">-</span><span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>每一次 setCount 都会产生一次更新，输出 3.</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">let</span> isMount <span class="token operator">=</span> <span class="token boolean">false</span>
+<span class="token keyword">let</span> workInProgressHook <span class="token operator">=</span> <span class="token keyword">null</span>  <span class="token comment">// 当前正在执行的 hook</span>
+
+
+<span class="token keyword">const</span> fiber <span class="token operator">=</span> <span class="token punctuation">{</span>
+    memoizedState<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>  <span class="token comment">// 组件的第一个 hook</span>
+    stateNode<span class="token operator">:</span> App
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    workInProgressHook <span class="token operator">=</span> fiber<span class="token punctuation">.</span>memoizedState
+    <span class="token keyword">const</span> app <span class="token operator">=</span> fiber<span class="token punctuation">.</span><span class="token function">stateNode</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    isMount <span class="token operator">=</span> <span class="token boolean">false</span>
+    <span class="token keyword">return</span> app
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token parameter">initialState</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> hook
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>isMount<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        hook <span class="token operator">=</span> <span class="token punctuation">{</span>
+            memoizedState<span class="token operator">:</span> initialState<span class="token punctuation">,</span>
+            next<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+            queue<span class="token operator">:</span> <span class="token punctuation">{</span>
+                pending<span class="token operator">:</span> <span class="token keyword">null</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>fiber<span class="token punctuation">.</span>memoizedState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            fiber<span class="token punctuation">.</span>memoizedState <span class="token operator">=</span> hook
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            workInProgressHook<span class="token punctuation">.</span>next <span class="token operator">=</span> hook
+        <span class="token punctuation">}</span>
+        workInProgressHook <span class="token operator">=</span> hook
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        hook <span class="token operator">=</span> workInProgressHook
+        workInProgressHook <span class="token operator">=</span> workInProgressHook<span class="token punctuation">.</span>next
+
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">let</span> baseState <span class="token operator">=</span> hook<span class="token punctuation">.</span>memoizedState
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>hook<span class="token punctuation">.</span>queue<span class="token punctuation">.</span>pending<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> firstUpdate <span class="token operator">=</span> hook<span class="token punctuation">.</span>queue<span class="token punctuation">.</span>pending<span class="token punctuation">.</span>next
+        <span class="token keyword">do</span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> action <span class="token operator">=</span> firstUpdate<span class="token punctuation">.</span>action <span class="token comment">// setState() 传入的参数</span>
+            baseState <span class="token operator">=</span> <span class="token function">action</span><span class="token punctuation">(</span>baseState<span class="token punctuation">)</span>
+            firstUpdate <span class="token operator">=</span> firstUpdate<span class="token punctuation">.</span>next
+        <span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>firstUpdate <span class="token operator">!==</span> hook<span class="token punctuation">.</span>queue<span class="token punctuation">.</span>pending<span class="token punctuation">.</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            hook<span class="token punctuation">.</span>queue<span class="token punctuation">.</span>pending <span class="token operator">=</span> <span class="token keyword">null</span>
+        <span class="token punctuation">}</span>
+        hook<span class="token punctuation">.</span>memoizedState <span class="token operator">=</span> baseState
+
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>baseState<span class="token punctuation">,</span> dispatch<span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/React/memo &amp; useMemo &amp; useCallback.html" class="prev">
+        memo &amp; useMemo &amp; useCallback
+      </a></span> <span class="next"><a href="/React/useEffect.html">
+        useEffect
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.4d894ed6.js" defer></script><script src="/assets/js/2.f9f18fc0.js" defer></script><script src="/assets/js/20.c30477de.js" defer></script>
+  </body>
+</html>
